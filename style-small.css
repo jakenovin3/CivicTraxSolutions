@@ -1,0 +1,13 @@
+@media screen and (max-width: 1250px) {
+
+  .modals-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

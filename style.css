@@ -8,7 +8,7 @@
 body {
   font-family: "Inter", sans-serif;
   width: 100vw;
-  height: 5000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  width: 50%;
+  width: 950px;
   position: fixed;
   z-index: 1000;
   top: 50px;
@@ -98,7 +98,7 @@ header {
 }
 
 .main {
-  width: 75vw;
+  width: 1250px;
   margin-top: 240px;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ header {
 .modal-row {
   position: relative;
   display: flex;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -225,6 +225,7 @@ header {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  margin-top: 30px;
 }
 
 .feature-item {
@@ -241,6 +242,7 @@ header {
 
 .feature-item-2 {
   grid-area: 1 / 2 / 2 / 4;
+  display: flex;
 }
 
 .feature-item-3 { 
@@ -253,4 +255,9 @@ header {
 
 .feature-item-5 { 
   grid-area: 3 / 1 / 4 / 3;
+  display: flex;
+}
+
+.feature-info-section {
+  margin: 10px;
 }
