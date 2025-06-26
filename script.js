@@ -7,8 +7,31 @@ media.addEventListener('change', (e) => {
   run(e);
 });
 
+initFadeInObserver();
+
 
 /* ---------- Helper Functions ---------- */
+
+// Used to see if the target element is in the viewport
+function initFadeInObserver() {
+
+  const getStartedSection = document.querySelector('.get-started-section');
+  if (!getStartedSection) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+  
+      if(entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+      }
+      else {
+        entry.target.classList.remove('fade-in');
+      }
+    })
+  });
+
+  observer.observe(getStartedSection);
+}
 
 function run(media) {
   if(media.matches) {
