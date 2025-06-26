@@ -1,13 +1,44 @@
 @media screen and (max-width: 1250px) {
 
+  .title-section {
+    height: 475px;
+  }
+
   .modals-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .modal-row {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .login-modal {
+    position: static;
+    transform: none;
+    left: 0;
+    top: 0;
+  }
+
+  .features-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 75vw;
+  }
+
+  .steps-row {
+    flex-direction: column;
+  }
+  
+  .step {
+    margin: 20px;
   }
   
 }
